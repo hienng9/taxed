@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ### Running the App
 
---> To run the App, in one terminal:
+--> To run the App, in the same directory, open one terminal:
 
 ```bash
 python3 -m celery -A taxedwebsite worker -l info
