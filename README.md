@@ -74,16 +74,16 @@ python3 manage.py runserver
 &nbsp; 
 <br>
 <p align="center">
-  Feed Home
+  Salary Calculator
 </p>
-<img src="https://user-images.githubusercontent.com/72341453/134747262-0a92233d-8010-40f8-84c5-8d94895aac44.PNG">
+<img src="web2.png">
 </td> 
 <td width="50%">
 <br>
 <p align="center">
-  Room Conversation Preview
+  Chat Bot
 </p>
-<img src="https://user-images.githubusercontent.com/72341453/134747155-3ca5b55f-b064-4741-aeae-abe90bddf41e.PNG">  
+<img src="web3.png">  
 </td>
 </table>
 
