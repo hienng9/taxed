@@ -20,7 +20,7 @@ cd taxed
 
 --> Create a virtual environment :
 ```bash
-# Let's install virtualenv first
+# Let's install virtualenv first if you have not already
 pip install virtualenv
 
 # Then we create our virtual environment
@@ -28,9 +28,14 @@ virtualenv envname
 
 ```
 
---> Activate the virtual environment :
+--> Activate the virtual environment using either:
 ```bash
 envname\scripts\activate
+
+```
+or
+```bash
+source envname/bin/activate
 
 ```
 
