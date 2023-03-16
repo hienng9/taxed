@@ -44,16 +44,16 @@ pip install -r requirements.txt
 
 ### Running the App
 
---> To run the App, we use :
-in one terminal 
+--> To run the App, in one terminal:
+
 ```bash
-python manage.py runserver
+python3 -m celery -A taxedwebsite worker -l info
 
 ```
 open another terminal, run the following:
 
 ```bash
-python3 -m celery -A taxedwebsite worker -l info
+python3 manage.py runserver
 
 ```
 
