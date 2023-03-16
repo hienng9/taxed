@@ -1,0 +1,133 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "What did the ocean say to the beach? Nothing, it just waved",
+        "What do you call a factory that makes okay products? A satisfactory.",
+        "I only know 25 letters of the alphabet. I don't know y."
+      ]
+    },
+    {
+      "tag": "YEL contribution amount",
+      "patterns": [
+        "How much is YEL contribution?",
+        "How YEL is determined?",
+        "How do you know how much is the YEL contribution"
+      ],
+      "responses": [
+        "YEL insurance is statutory and the percentage is same for all entrepreneurs. 
+        The amount of YEL contributions is a set percentage of the YEL income you estimate yourself.
+        In 2023, the YEL contribution percentages on earnings will be: 
+        
+        24.10% of 18-52 year olds 
+        25.60% for 53-62 year olds 
+        63 years of age from the beginning of the following year 24.10% 
+        However, for the first time as a future start-up entrepreneur in the YEL district, you will automatically receive a 22% discount for the first 48 months of operation.
+        "
+      ]
+    },
+    {
+      "tag": "YEL choices",
+      "patterns": [
+        "How to buy YEL insurance?",
+        "How do I take out YEL insurance",
+        "Where should I buy YEL insurance"
+      ],
+      "responses": [
+        "You can take out YEL insurance directly from the pension insurance company of your choice such as Varma, Elo.
+        After that, estimate the earnings estimate for yourself (min. 8 575,45 € - max. 194 750 € ). 
+        YEL insurance payments are based on the monetary value of your work input, i.e., income estimation. 
+        As an entrepreneur, you define your income estimation yourself and the pension insurance company confirms it. 
+        Your insurance payments, pension and level of social security are determined by your income estimation. "
+      ]
+    }, {
+      "tag": "YEL definition",
+      "patterns": [
+        "Who should take out YEL insurance?",
+        "I work part-time, do I need YEL insurance?",
+        "What is YEL insurance?",
+        "When do I need to take out YEL insurance"
+      ],
+      "responses": [
+      "It is mandatory to take out YEL insurance if your earn gross salary more than 689 € per month and your entrepreneurial activity lasts longer than four months. ",
+    
+    "YEL insurance is mandatory if:
+    - you are an entrepreneur and 18-69 years old (born in 1957 or before, old age pension upper age limit is 68 years, born in 1958-61 the limit is 69 years and born 1962 or later the limit is 70 years)
+    your entrepreneurial activities continue for a minimum of four months
+    - your confirmed income, or the value of your work input, is at least 8 575,45 € and monthly 714,62 € (in 2023)"]
+    },
+     {
+      "tag": "VAT rates",
+      "patterns": [
+        "How much is VAT?",
+        "Which VAT rates should I choose",
+        "What are the percentages of VAT"
+      ],
+      "responses": [
+      "
+      Value added tax (VAT) is a consumption tax paid by the customer as part of the price of the service.
+      General VAT is 24%, but certain industries are eligible for reduced (e.g., physical education instructors) or VAT-free (e.g., performing artists) billing.  
+    "]
+    },
+    {
+      "tag": "Unemployment fund",
+      "patterns": [
+        "How can I join unemployment funds as an entrepreneur?",
+        "How do I join unemployment funds?"
+      ],
+      "responses": [
+      "
+      An entrepreneur can join the entrepreneur's fund when the YEL insurance has been taken out and the level of YEL income estimation is at least 13,247 euros (2020).
+      "]
+    },
+    {
+      "tag": "Unemployment benefits",
+      "patterns": [
+        "How can I get unemployment benefits as an entrepreneur?",
+        "What are the conditions to restore unemployment benefits?"
+      ],
+      "responses": [
+      "Unemployment insurance can be restored as follows:
+      - You have joined and been a member of the Entrepreneurship Fund for more than 15 months, so that you have also taken out YEL insurance with a minimum income of EUR 13,247.\n
+      - You have not joined the entrepreneur fund or taken out YEL insurance, but you have some separate insurance against unemployment.
+      "]
+    }
+  ]
+}

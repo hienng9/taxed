@@ -1,0 +1,211 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="conten-blocks">
+  <section class="content advanced-salary-calculator">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div class="content__row flex-row">
+            <div class="content__wrapper">
+              <div class="column-one-third">
+                <div class="column-content">
+                  <form class="salary-calculator" method="post" id="AdvancedSalaryCalculator">
+                    {% csrf_token %}
+                    <div class="layout__boxHeader">
+                      <div class="layout__boxTitle">
+                    <h3 class="salary-calculator-title">FREELANCER'S INCOME CALCULATOR</h3>
+                      </div>
+                    </div>
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td withd="100%">
+                            <div id="basic">
+                              <div id="basic-label">
+                                <strong>Use this calculator to see how much you earn after taxes and other contributions </strong>
+                              </div>
+                              <div class="form__group">
+                                <div class="field-group half">
+                                  <label id="total_invoicing_sum_label" for="total_invoicing_sum">Total amount of invoice</label>
+                                  <div class="input-addon-wrapper">
+                                    <input type="text" id="total_invoicing_sum" name="total_invoicing_sum" placeholder="100" value="100">
+                                    <span class="input-addon-item">€</span>
+                                  </div>
+                                </div>
+                                <div class="field-group half">
+                                  <label id="withholding_tax_percentage_label" for="withholding_tax_percentage">Your withholding tax percentage</label>
+                                  <div class="input-addon-wrapper">
+                                    <input type="text" id="withholding_tax_percentage" name="withholding_tax_percentage" placeholder="15" value="15">
+                                    <span class="input-addon-item">%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__group contains-vat active">
+                              <div class="field-group">
+                                <label id="contains_vat_label" for="contains_vat">Is VAT included in the total amount?</label>
+                                <div class="relative">
+                                  <select id="contains_vat" name="contains_vat">
+                                    <option value="0" selected="selected">No</option>
+                                    <option value="1">Yes</option>
+                                  </select>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__group">
+                              <div class="field-group half">
+                                <label id="invoicing_vat_percentage_label" for="invoicing_vate_percentage">VAT rate</label>
+                                <div class="relative">
+                                  <select id="invoicing_vat_percentage" name="invoicing_vate_percentage">
+                                    <option value="24" selected="selected">24 %</option>
+                                    <option value="10">10 %</option>
+                                    <option value="0">0 %</option>
+                                  </select>
+                                  
+                                </div>
+                                <div class="field-group half">
+                                  <label id="age" for="age">Age</label>
+                                  <div class="input-addon-wrapper">
+                                    <input id="age" type="text" name="age" value="30">
+                                    <spane class="input-addon-item">years</spane>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__group" id="yel-checkbox">
+                              <label id="yel_label" for="yel_obligated">Do you have YEL insurance?</label>
+                              <input id="yel_obligated" type="checkbox" name="yel_obligated" value="1">
+                            </div>
+                            <div class="form__group yel-toggle">
+                              <label id="yel_start_date_label" for="yel_start-date">When did you start YEL payment?</label>
+                              <input id="yel_start_date" name="yel_start_date" 
+                              class="yel-datepicker hasDatepicker" type="date" value="2023-03-15">
+                            </div>
+                            <!-- <div class="submit-wrapper">
+                              <input id="calculateSalary" type="submit" value="Calculate Income">
+                            </div> -->
+                            <div class="form__action">
+                              
+                              <button class="btn btn--main" type="submit">CALCULATE</button>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+              </div>
+              <div class="column-two-thirds">
+                <div class="column-content">
+                  <div id="results" >
+                    <div class="layout__boxHeader">
+                      <div class="layout__boxTitle">
+                    <h3 class="salary-calculator-title">ESTIMATED INCOME</h3>
+                      </div>
+                    </div>
+
+                    <table style="width:100%">
+                      <tr class="table-section-title">
+                          <td colspan="2">
+                            <strong>Invoicing</strong>
+                            <hr>
+                          </td>
+                          
+                        </tr>
+                        
+                        <tr>
+                          <td id="grand-total-with-vat-label">Sum vat <span id="grand-total-with-vat-label-percentage">24 %</span> (gross)</td>
+                          <td style="text-align:right" id="grand-total-with-vat">{{result.sum_wVAT}} €</td>
+                        </tr>
+                        
+                        <tr>
+                          <td id="grand-total-without-vat-label">Sum vat 0 % (net)</td>
+                          <td style="text-align:right" id="grand-total-without-vat">{{result.sum_woVAT}} €</td>
+                        </tr>
+                        
+                        <tr id="expenses" class="table-section-title hidden">
+                          <td colspan="2">
+                            <strong>Deductible fees</strong>
+                            
+                          </td>
+                        </tr>
+                        <tr id="receipt-expenses-row" class="hidden">
+                          <td id="receipt-expenses-label">Matkaliput alv:ton (netto)</td>
+                          <td id="receipt-expenses"></td>
+                        </tr>
+                        <tr id="travel-expenses-row" class="hidden">
+                          <td id="travel-expenses-label">Travel costs</td>
+                          <td id="travel-expenses"></td>
+                        </tr>
+                        
+                        <tr class="table-section-title">
+                          <td colspan="2">
+                            <strong>Salary</strong>
+                            <hr>
+                          </td>
+                          
+                          
+                        </tr>
+                        <tr>
+                          <td id="gross-salary-label">Gross salary</td>
+                          <td style="text-align:right" id="gross-salary">{{result.sum_woVAT}} €</td>
+                        </tr>
+                        
+                        <tr>
+                          <td id="employee-fees-sum-label">Withholding income tax <span id="employee-fees-sum-label-percentage">({{result.withholding_tax}} %) </span></td>
+                          <td style="text-align:right" id="employee-fees-sum">- {{result.withholding_tax_amount}} €</td>
+                        </tr>
+                        <!-- <hr>
+                        <tr id="yel-fees-sum-row" class="hidden">
+                          <td id="yel-fees-sum-label">YEL-insurance (<span id="yel-fees-sum-percentage"></span> of gross salary), <br><a href="https://tuki.ukko.fi/hc/en-us/articles/115002764445-How-much-is-the-YEL-contribution-" target="_blank">With starting entrepreneur discount</a> <img width="23" height="13" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2023%2013'%3E%3C/svg%3E" data-lazy-src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg"><noscript><img width="23" height="13" src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg"></noscript></td>
+                          <td id="yel-fees-sum"></td>
+                        </tr> -->
+                        <!-- <hr>
+                        <tr id="social-security-fees-sum-row" class="hidden">
+                          <td id="social-security-fees-sum-label">Health insurance fee (<span id="social-security-fees-sum-percentage"></span>) <img width="23" height="13" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2023%2013'%3E%3C/svg%3E" data-lazy-src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg"><noscript><img width="23" height="13" src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg"></noscript></td>
+                          <td id="social-security-fees-sum"></td>
+                        </tr> -->
+                        
+                        <tr class="table-section-title">
+                          <td colspan="2">
+                            <strong>Other fees</strong>
+                            <hr>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="ukko-service-fee-label">Commission and third party service fee (<span id="ukko-service-fee-percentage">0.00 %</span> of invoiced amount) </td>
+                          <td style="text-align:right" id="ukko-service-fee"> 0,00 €</td>
+                        </tr>
+                        
+                        <tr class="salary-money-to-account table-section-title">
+                          <td id="final-money-to-account-label">
+                              <strong>Paid to account</strong>
+                          </td>
+                          <td style="text-align:right" id="final-money-to-account">
+                              <strong>{{result.gross_income}} €</strong>
+                          </td>
+                        </tr>
+                        <!-- <tr class="personal-deductions">
+                          <td id="personal-deductions-sum-label"><img width="23" height="13" src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg" data-lazy-src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="23" height="13" src="https://cloudfront.ukko.fi/wp-content/themes/ukko/img/icon/seteli.svg"></noscript> Deductible in personal taxation</td>
+                          <td style="text-align:right" id="personal-deductions-sum">8,00 €</td>
+                        </tr> -->
+                      </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+</div>
+{% endblock content %}
