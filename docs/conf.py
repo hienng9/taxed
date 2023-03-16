@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Taxed website'
-copyright = '2023, group T2'
-author = 'group T2'
-release = '1.0.0'
+copyright = '2023, Group T2'
+author = 'Group T2'
+release = '1.1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
