@@ -24,5 +24,4 @@ Welcome to Taxed website's documentation!
 Indices and tables
 ==================
 
-* :ref:`genindex`
 * :ref:`search`

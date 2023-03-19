@@ -116,7 +116,6 @@ def userProfile(request, pk):
     return render(request, 'base/profile.html', context)
 
 def calculate_salary(request):
-    print(request)
     form = CalculatorForm(request.POST or None)
     result = None
     if request.method == "POST":

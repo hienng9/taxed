@@ -29,13 +29,15 @@
                                 <div class="field-group half">
                                   <label id="total_invoicing_sum_label" for="total_invoicing_sum">Total amount of invoice</label>
                                   <div class="input-addon-wrapper">
-                                    <input type="text" id="total_invoicing_sum" name="total_invoicing_sum" placeholder="100" value="100">
+                                    
+                                    <input type="text" id="total_invoicing_sum" name="total_invoicing_sum" placeholder="3000" value="3000">
                                     <span class="input-addon-item">€</span>
                                   </div>
                                 </div>
                                 <div class="field-group half">
                                   <label id="withholding_tax_percentage_label" for="withholding_tax_percentage">Your withholding tax percentage</label>
                                   <div class="input-addon-wrapper">
+                                    
                                     <input type="text" id="withholding_tax_percentage" name="withholding_tax_percentage" placeholder="15" value="15">
                                     <span class="input-addon-item">%</span>
                                   </div>
@@ -98,7 +100,9 @@
                   </form>
                 </div>
               </div>
+              {% if result != None %}
               <div class="column-two-thirds">
+                
                 <div class="column-content">
                   <div id="results" >
                     <div class="layout__boxHeader">
@@ -195,8 +199,9 @@
                       </table>
                   </div>
                 </div>
-
+              
               </div>
+              {% endif %}
             </div>
           </div>
         </div>

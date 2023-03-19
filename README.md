@@ -4,6 +4,8 @@
 # Taxed Website
 </div>
 
+###Documentation
+Read the documenation online at http://taxed.rtfd.io/
 ### Cloning the repository
 
 --> Clone the repository using the command below :

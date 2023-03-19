@@ -1445,9 +1445,11 @@ section.content.advanced-salary-calculator.content__row{
 
 .column-one-third {
   margin-top: 1%;
-  width: calc(40% - 0.25rem);
-  float:left;
-  position: inherit;
+  /* width: calc(40% - 0.25rem); */
+  width:435px;
+  height: 746px;
+  /* float:left;
+  position: flex; */
 
 
 }
@@ -1456,8 +1458,7 @@ section.content.advanced-salary-calculator.content__row{
   margin-top: 1%;
   margin-left: 2%;
   width: calc(60% - 0.25rem);
-  float: right;
-  position: inherit;
+  
 
 }
 
