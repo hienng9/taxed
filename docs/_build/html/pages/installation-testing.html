@@ -14,7 +14,7 @@
     <script src="../_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="How to interact with chat bot" href="chatbot.html" />
+    <link rel="next" title="How to navigate through the website" href="navigation-bar.html" />
     <link rel="prev" title="Welcome to Taxed website’s documentation!" href="../index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -34,47 +34,77 @@
             
   <section id="installation-guide-for-testing-purpose">
 <h1>Installation guide for testing purpose<a class="headerlink" href="#installation-guide-for-testing-purpose" title="Permalink to this heading">¶</a></h1>
-<p>In this section, you will be guided on how to download the prototype, create virtual environment, install dependencies and run the taxed website.</p>
-<p>First, make sure you have python and virtualenv installed on your computer.</p>
-<p>If you have not installed, please head over to <a class="reference external" href="https://www.python.org/">https://www.python.org/</a> and google on how to install virtualenv on your machine and comeback once they are installed.</p>
+<p>In this section, you will be guided on how to download the prototype, create virtual environment, install dependencies and run the website.
+If you have any problem, please feel free to contact me via email <a class="reference external" href="mailto:hien&#46;nguyen&#37;&#52;&#48;edu&#46;turkuamk&#46;fi">hien<span>&#46;</span>nguyen<span>&#64;</span>edu<span>&#46;</span>turkuamk<span>&#46;</span>fi</a> or WhatsApp +358 46 8404770</p>
+<section id="system-requirements">
+<h2>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Python version 3</p></li>
+</ol>
+<p>If you have not installed, please visit to <a class="reference external" href="https://www.python.org/">https://www.python.org/</a> and comeback once it is installed.</p>
+<p>2. Docker for desktop
+On Windows: <a class="reference external" href="https://docs.docker.com/desktop/install/windows-install/">https://docs.docker.com/desktop/install/windows-install/</a>
+On Mac: <a class="reference external" href="https://docs.docker.com/desktop/install/mac-install/">https://docs.docker.com/desktop/install/mac-install/</a>
+On Linux: <a class="reference external" href="https://docs.docker.com/desktop/install/linux-install/">https://docs.docker.com/desktop/install/linux-install/</a>
+On Ubuntu: <a class="reference external" href="https://docs.docker.com/desktop/install/ubuntu/">https://docs.docker.com/desktop/install/ubuntu/</a></p>
+</section>
+<section id="making-sure-docker-desktop-is-running">
+<h2>Making sure Docker Desktop is running:<a class="headerlink" href="#making-sure-docker-desktop-is-running" title="Permalink to this heading">¶</a></h2>
+<p>After Docker Desktop is installed, open it.</p>
+<p>Accept terms and condition when asked.</p>
+<img alt="../_images/termsandconds.jpg" src="../_images/termsandconds.jpg" />
+<p>After starting period, the Docker Desktop will appear as followed:</p>
+<img alt="../_images/dockerrunning.jpg" src="../_images/dockerrunning.jpg" />
+</section>
 <section id="cloning-the-repository">
 <h2>Cloning the repository<a class="headerlink" href="#cloning-the-repository" title="Permalink to this heading">¶</a></h2>
-<p>Clone the repository using the command below:</p>
+<ol class="arabic">
+<li><p>Clone the repository using the command below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/hienng9/taxed.git
 </pre></div>
 </div>
-<p>Move into the directory where we have the project files:</p>
+</li>
+</ol>
+<p>Or download the project directly from <a class="reference external" href="https://github.com/hienng9/taxed">https://github.com/hienng9/taxed</a> and extract the zip file to any location that you wish.</p>
+<img alt="../_images/download-git.png" src="../_images/download-git.png" />
+<ol class="arabic" start="2">
+<li><p>In case you use git to clone the project, continue by moving into the directory where we have the project files:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd taxed
 </pre></div>
 </div>
-<p>Create a virtual environment:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Let&#39;s install virtualenv first if you have not already
-$ pip install virtualenv
-# Then we create our virtual environment
-$ virtualenv envname
-</pre></div>
-</div>
-<p>Activate the virtual environment using either:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ envname/scripts/activate
-$ source envname/bin/activate
-</pre></div>
-</div>
-<p>Install the requirements:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -r requirements.txt
-</pre></div>
-</div>
+</li>
+</ol>
+<p>Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
+From this point on, we will be using the terminal.</p>
 </section>
-<section id="running-the-app">
-<h2>Running the App<a class="headerlink" href="#running-the-app" title="Permalink to this heading">¶</a></h2>
-<p>To run the App, in the same directory, open one terminal:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m celery -A taxedwebsite worker -l info
+<section id="creating-a-virtual-environment">
+<h2>Creating a virtual environment<a class="headerlink" href="#creating-a-virtual-environment" title="Permalink to this heading">¶</a></h2>
+<p>Let’s install virtualenv first if you have not already:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install virtualenv
 </pre></div>
 </div>
-<p>open another terminal, run the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 manage.py runserver
+<p>Then we create our virtual environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ virtualenv envname
 </pre></div>
 </div>
-<p>Then, the development server will be started at <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+<p>Activate the virtual environment using either on Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ envname/Scripts/activate
+</pre></div>
+</div>
+<p>or on Linux or Mac:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ source envname/bin/activate
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Finally, run the following command on Windows::</dt><dd><p>$ docker-compose up</p>
+</dd>
+<dt>On Mac or Linux use::</dt><dd><p>$ sudo docker-compose up</p>
+</dd>
+</dl>
+<p>Waiting for all the neccessary dependencies are installed and images are created. You should have the following:</p>
+<img alt="../_images/images-created.jpg" src="../_images/images-created.jpg" />
+<p>After that, open a web browser and go to <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+<p>Press Control-C to end the below command.</p>
 </section>
 </section>
 
@@ -98,15 +128,17 @@ $ source envname/bin/activate
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation guide for testing purpose</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-requirements">System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-sure-docker-desktop-is-running">Making sure Docker Desktop is running:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cloning-the-repository">Cloning the repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#running-the-app">Running the App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-virtual-environment">Creating a virtual environment</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="navigation-bar.html">How to navigate through the website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="salary-calculator.html">How to use salary calculator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chatbot.html">How to interact with chat bot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-registration.html">User registration, Login and Logout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-user-info.html">How to update user information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="salary-calculator.html">How to use salary calculator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="navigation-bar.html">How to navigate through the website</a></li>
 </ul>
 
 <div class="relations">
@@ -114,7 +146,7 @@ $ source envname/bin/activate
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="../index.html" title="previous chapter">Welcome to Taxed website’s documentation!</a></li>
-      <li>Next: <a href="chatbot.html" title="next chapter">How to interact with chat bot</a></li>
+      <li>Next: <a href="navigation-bar.html" title="next chapter">How to navigate through the website</a></li>
   </ul></li>
 </ul>
 </div>

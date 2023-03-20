@@ -64,7 +64,7 @@
 
 
 \title{Taxed website}
-\date{Mar 18, 2023}
+\date{Mar 20, 2023}
 \release{1.1.0}
 \author{Group T2}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -96,12 +96,39 @@ If you have any problem, please feel free to contact me via email \sphinxhref{ma
 
 
 \section{System requirements}
-\label{\detokenize{pages/installation-testing:system-requirements}}
+\label{\detokenize{pages/installation-testing:system-requirements}}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
 \sphinxAtStartPar
 Python version 3
 
+\end{enumerate}
+
 \sphinxAtStartPar
 If you have not installed, please visit to \sphinxurl{https://www.python.org/} and comeback once it is installed.
+
+\sphinxAtStartPar
+2. Docker for desktop
+On Windows: \sphinxurl{https://docs.docker.com/desktop/install/windows-install/}
+On Mac: \sphinxurl{https://docs.docker.com/desktop/install/mac-install/}
+On Linux: \sphinxurl{https://docs.docker.com/desktop/install/linux-install/}
+On Ubuntu: \sphinxurl{https://docs.docker.com/desktop/install/ubuntu/}
+
+
+\section{Making sure Docker Desktop is running:}
+\label{\detokenize{pages/installation-testing:making-sure-docker-desktop-is-running}}
+\sphinxAtStartPar
+After Docker Desktop is installed, open it.
+
+\sphinxAtStartPar
+Accept terms and condition when asked.
+
+\noindent\sphinxincludegraphics{{termsandconds}.jpg}
+
+\sphinxAtStartPar
+After starting period, the Docker Desktop will appear as followed:
+
+\noindent\sphinxincludegraphics{{dockerrunning}.jpg}
 
 
 \section{Cloning the repository}
@@ -135,7 +162,7 @@ In case you use git to clone the project, continue by moving into the directory 
 \end{enumerate}
 
 \sphinxAtStartPar
-In case you download the project, then open your terminal to change to the directory where the project is located.
+Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
 From this point on, we will be using the terminal.
 
 
@@ -156,45 +183,39 @@ Then we create our virtual environment:
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
-Activate the virtual environment using either:
+Activate the virtual environment using either on Windows:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZdl{} envname/scripts/activate
+\PYGZdl{} envname/Scripts/activate
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
-or:
+or on Linux or Mac:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYGZdl{} source envname/bin/activate
 \end{sphinxVerbatim}
+\begin{description}
+\sphinxlineitem{Finally, run the following command on Windows::}
+\sphinxAtStartPar
+\$ docker\sphinxhyphen{}compose up
+
+\sphinxlineitem{On Mac or Linux use::}
+\sphinxAtStartPar
+\$ sudo docker\sphinxhyphen{}compose up
+
+\end{description}
 
 \sphinxAtStartPar
-Install the requirements:
+Waiting for all the neccessary dependencies are installed and images are created. You should have the following:
 
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZdl{} pip install \PYGZhy{}r requirements.txt
-\end{sphinxVerbatim}
-
-
-\section{Running the App}
-\label{\detokenize{pages/installation-testing:running-the-app}}
-\sphinxAtStartPar
-To run the App, in the same directory, open one terminal:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZdl{} python \PYGZhy{}m celery \PYGZhy{}A taxedwebsite worker \PYGZhy{}l info
-\end{sphinxVerbatim}
+\noindent\sphinxincludegraphics{{images-created}.jpg}
 
 \sphinxAtStartPar
-open another terminal, run the following:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZdl{} python manage.py runserver
-\end{sphinxVerbatim}
+After that, open a web browser and go to \sphinxurl{http://127.0.0.1:8000/}
 
 \sphinxAtStartPar
-Then, the development server will be started at \sphinxurl{http://127.0.0.1:8000/}
+Press Control\sphinxhyphen{}C to end the below command.
 
 \sphinxstepscope
 

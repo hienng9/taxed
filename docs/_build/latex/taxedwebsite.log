@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.3.18)  18 MAR 2023 21:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.3.18)  20 MAR 2023 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,116 +852,134 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapter 1.
+<termsandconds.jpg, id=100, 599.23875pt x 373.395pt>
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
-14.
+26.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-<download-git.png, id=97, 2680.0125pt x 1503.36656pt>
-File: download-git.png Graphic file (type png)
-<use download-git.png>
-Package pdftex.def Info: download-git.png  used on input line 123.
-(pdftex.def)             Requested size: 469.7453pt x 263.506pt.
+File: termsandconds.jpg Graphic file (type jpg)
+<use termsandconds.jpg>
+Package pdftex.def Info: termsandconds.jpg  used on input line 126.
+(pdftex.def)             Requested size: 469.7634pt x 292.7226pt.
  [1
 
-] [2 <./download-git.png>] [3] [4
-
 ]
+<dockerrunning.jpg, id=108, 948.54375pt x 540.8205pt>
+File: dockerrunning.jpg Graphic file (type jpg)
+<use dockerrunning.jpg>
+Package pdftex.def Info: dockerrunning.jpg  used on input line 131.
+(pdftex.def)             Requested size: 469.75494pt x 267.83487pt.
+ [2 <./termsandconds.jpg> <./dockerrunning.jpg>]
+<download-git.png, id=114, 2680.0125pt x 1503.36656pt>
+File: download-git.png Graphic file (type png)
+<use download-git.png>
+Package pdftex.def Info: download-git.png  used on input line 150.
+(pdftex.def)             Requested size: 469.7453pt x 263.506pt.
+ [3 <./download-git.png>]
+<images-created.jpg, id=125, 869.04675pt x 431.81325pt>
+File: images-created.jpg Graphic file (type jpg)
+<use images-created.jpg>
+Package pdftex.def Info: images-created.jpg  used on input line 212.
+(pdftex.def)             Requested size: 469.75565pt x 233.41946pt.
+ [4 <./images-created.jpg>]
 Chapter 2.
-<navbar-notloggedin.png, id=122, 4044.10875pt x 2391.68532pt>
+<navbar-notloggedin.png, id=131, 4044.10875pt x 2391.68532pt>
 File: navbar-notloggedin.png Graphic file (type png)
 <use navbar-notloggedin.png>
-Package pdftex.def Info: navbar-notloggedin.png  used on input line 210.
+Package pdftex.def Info: navbar-notloggedin.png  used on input line 231.
 (pdftex.def)             Requested size: 469.7217pt x 277.79333pt.
-<navbar-loggedin.png, id=123, 2682.27094pt x 1580.90625pt>
+<navbar-loggedin.png, id=132, 2682.27094pt x 1580.90625pt>
 File: navbar-loggedin.png Graphic file (type png)
 <use navbar-loggedin.png>
-Package pdftex.def Info: navbar-loggedin.png  used on input line 242.
+Package pdftex.def Info: navbar-loggedin.png  used on input line 263.
 (pdftex.def)             Requested size: 469.73187pt x 276.85571pt.
-[5 <./navbar-notloggedin.png>]
-<dropdown.png, id=135, 422.32782pt x 238.64156pt>
+[5
+
+ <./navbar-notloggedin.png>]
+<dropdown.png, id=144, 422.32782pt x 238.64156pt>
 File: dropdown.png Graphic file (type png)
 <use dropdown.png>
-Package pdftex.def Info: dropdown.png  used on input line 250.
+Package pdftex.def Info: dropdown.png  used on input line 271.
 (pdftex.def)             Requested size: 422.32678pt x 238.64096pt.
  [6 <./navbar-loggedin.png> <./dropdown.png>]
 Chapter 3.
 File: navbar-notloggedin.png Graphic file (type png)
 <use navbar-notloggedin.png>
-Package pdftex.def Info: navbar-notloggedin.png  used on input line 263.
+Package pdftex.def Info: navbar-notloggedin.png  used on input line 284.
 (pdftex.def)             Requested size: 469.7217pt x 277.79333pt.
 [7
 
 ]
-<calculator-after.png, id=154, 2214.77437pt x 1442.38875pt>
+<calculator-after.png, id=163, 2214.77437pt x 1442.38875pt>
 File: calculator-after.png Graphic file (type png)
 <use calculator-after.png>
-Package pdftex.def Info: calculator-after.png  used on input line 302.
+Package pdftex.def Info: calculator-after.png  used on input line 323.
 (pdftex.def)             Requested size: 469.74623pt x 305.92581pt.
  [8 <./calculator-after.png>]
 Chapter 4.
-<messages-icon.png, id=160, 514.92375pt x 437.38406pt>
+<messages-icon.png, id=169, 514.92375pt x 437.38406pt>
 File: messages-icon.png Graphic file (type png)
 <use messages-icon.png>
-Package pdftex.def Info: messages-icon.png  used on input line 315.
+Package pdftex.def Info: messages-icon.png  used on input line 336.
 (pdftex.def)             Requested size: 469.76776pt x 399.0212pt.
-<chatbot-joke.png, id=161, 426.84468pt x 562.35094pt>
+<chatbot-joke.png, id=170, 426.84468pt x 562.35094pt>
 File: chatbot-joke.png Graphic file (type png)
 <use chatbot-joke.png>
-Package pdftex.def Info: chatbot-joke.png  used on input line 321.
+Package pdftex.def Info: chatbot-joke.png  used on input line 342.
 (pdftex.def)             Requested size: 426.84364pt x 562.34956pt.
 [9
 
  <./messages-icon.png>]
-<chatbot-serious.png, id=168, 365.86688pt x 575.90157pt>
+<chatbot-serious.png, id=177, 365.86688pt x 575.90157pt>
 File: chatbot-serious.png Graphic file (type png)
 <use chatbot-serious.png>
-Package pdftex.def Info: chatbot-serious.png  used on input line 323.
+Package pdftex.def Info: chatbot-serious.png  used on input line 344.
 (pdftex.def)             Requested size: 365.86598pt x 575.90016pt.
  [10 <./chatbot-joke.png (PNG copy)>] [11 <./chatbot-serious.png (PNG copy)>] [
 12
 
 ]
 Chapter 5.
-<signup1.png, id=181, 2373.61781pt x 1293.33188pt>
+<signup1.png, id=190, 2373.61781pt x 1293.33188pt>
 File: signup1.png Graphic file (type png)
 <use signup1.png>
-Package pdftex.def Info: signup1.png  used on input line 340.
+Package pdftex.def Info: signup1.png  used on input line 361.
 (pdftex.def)             Requested size: 469.75323pt x 255.95815pt.
-<signup2.png, id=182, 2454.92157pt x 1443.14156pt>
+<signup2.png, id=191, 2454.92157pt x 1443.14156pt>
 File: signup2.png Graphic file (type png)
 <use signup2.png>
-Package pdftex.def Info: signup2.png  used on input line 345.
+Package pdftex.def Info: signup2.png  used on input line 366.
 (pdftex.def)             Requested size: 469.73634pt x 276.13756pt.
 [13 <./signup1.png>]
-<login.png, id=188, 2461.69687pt x 1282.7925pt>
+<login.png, id=197, 2461.69687pt x 1282.7925pt>
 File: login.png Graphic file (type png)
 <use login.png>
-Package pdftex.def Info: login.png  used on input line 353.
+Package pdftex.def Info: login.png  used on input line 374.
 (pdftex.def)             Requested size: 469.75565pt x 244.79008pt.
-<after-login.png, id=189, 1772.87344pt x 769.37437pt>
+<after-login.png, id=198, 1772.87344pt x 769.37437pt>
 File: after-login.png Graphic file (type png)
 <use after-login.png>
-Package pdftex.def Info: after-login.png  used on input line 358.
+Package pdftex.def Info: after-login.png  used on input line 379.
 (pdftex.def)             Requested size: 469.75513pt x 203.85976pt.
  [14 <./signup2.png> <./login.png>] [15 <./after-login.png (PNG copy)>] [16
 
 ]
 Chapter 6.
-<update-user1.png, id=205, 2387.16844pt x 1467.23157pt>
+<update-user1.png, id=214, 2387.16844pt x 1467.23157pt>
 File: update-user1.png Graphic file (type png)
 <use update-user1.png>
-Package pdftex.def Info: update-user1.png  used on input line 369.
+Package pdftex.def Info: update-user1.png  used on input line 390.
 (pdftex.def)             Requested size: 469.73952pt x 288.71722pt.
-<user-profile.png, id=206, 1704.3675pt x 539.76656pt>
+<user-profile.png, id=215, 1704.3675pt x 539.76656pt>
 File: user-profile.png Graphic file (type png)
 <use user-profile.png>
-Package pdftex.def Info: user-profile.png  used on input line 380.
+Package pdftex.def Info: user-profile.png  used on input line 401.
 (pdftex.def)             Requested size: 469.75578pt x 148.76982pt.
 [17 <./update-user1.png>] [18 <./user-profile.png (PNG copy)>]
 Chapter 7.
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 3
-85.
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 4
+06.
 (/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) (./taxedwebsite.ind) [19
@@ -969,26 +987,26 @@ File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ]
 (./taxedwebsite.aux)
 Package rerunfilecheck Info: File `taxedwebsite.out' has not changed.
-(rerunfilecheck)             Checksum: A53C8DC1FCCF5BE31F338AF8F4FE971A;2397.
+(rerunfilecheck)             Checksum: EF9B4A687D7ABE41141D05950CF9B805;2521.
  ) 
 Here is how much of TeX's memory you used:
- 15693 strings out of 479907
- 259407 string characters out of 5886408
- 574683 words of memory out of 5000000
- 33457 multiletter control sequences out of 15000+600000
+ 15719 strings out of 479907
+ 259991 string characters out of 5886408
+ 574706 words of memory out of 5000000
+ 33478 multiletter control sequences out of 15000+600000
  511152 words of font info for 64 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
- 70i,12n,76p,292b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,12n,76p,308b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf/fonts/
 enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.
 pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/f
 onts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gy
 re/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 >
-Output written on taxedwebsite.pdf (23 pages, 1638638 bytes).
+Output written on taxedwebsite.pdf (23 pages, 2211597 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

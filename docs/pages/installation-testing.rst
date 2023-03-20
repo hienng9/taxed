@@ -80,3 +80,4 @@ Waiting for all the neccessary dependencies are installed and images are created
 
 After that, open a web browser and go to http://127.0.0.1:8000/
 
+Press Control-C to end the below command.
