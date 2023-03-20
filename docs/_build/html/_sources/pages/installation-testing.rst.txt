@@ -13,9 +13,13 @@ System requirements
 If you have not installed, please visit to https://www.python.org/ and comeback once it is installed.
 
 2. Docker for desktop
+
 On Windows: https://docs.docker.com/desktop/install/windows-install/
+
 On Mac: https://docs.docker.com/desktop/install/mac-install/
+
 On Linux: https://docs.docker.com/desktop/install/linux-install/
+
 On Ubuntu: https://docs.docker.com/desktop/install/ubuntu/
 
 Making sure Docker Desktop is running:
@@ -46,9 +50,8 @@ Or download the project directly from https://github.com/hienng9/taxed and extra
     $ cd taxed
 
 Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
+
 From this point on, we will be using the terminal.
-
-
 
 Creating a virtual environment
 ==============================================
@@ -70,14 +73,21 @@ or on Linux or Mac::
     $ source envname/bin/activate
 
 Finally, run the following command on Windows::
+
     $ docker-compose up
 
 On Mac or Linux use::
+
     $ sudo docker-compose up
+    
 Waiting for all the neccessary dependencies are installed and images are created. You should have the following:
 
 .. image:: images-created.jpg
 
 After that, open a web browser and go to http://127.0.0.1:8000/
 
-Press Control-C to end the below command.
+You should see the front page of our website.
+
+.. image:: front-page.png
+
+Press Control-C if you want to end the testing.

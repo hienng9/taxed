@@ -42,11 +42,13 @@ If you have any problem, please feel free to contact me via email <a class="refe
 <li><p>Python version 3</p></li>
 </ol>
 <p>If you have not installed, please visit to <a class="reference external" href="https://www.python.org/">https://www.python.org/</a> and comeback once it is installed.</p>
-<p>2. Docker for desktop
-On Windows: <a class="reference external" href="https://docs.docker.com/desktop/install/windows-install/">https://docs.docker.com/desktop/install/windows-install/</a>
-On Mac: <a class="reference external" href="https://docs.docker.com/desktop/install/mac-install/">https://docs.docker.com/desktop/install/mac-install/</a>
-On Linux: <a class="reference external" href="https://docs.docker.com/desktop/install/linux-install/">https://docs.docker.com/desktop/install/linux-install/</a>
-On Ubuntu: <a class="reference external" href="https://docs.docker.com/desktop/install/ubuntu/">https://docs.docker.com/desktop/install/ubuntu/</a></p>
+<ol class="arabic simple" start="2">
+<li><p>Docker for desktop</p></li>
+</ol>
+<p>On Windows: <a class="reference external" href="https://docs.docker.com/desktop/install/windows-install/">https://docs.docker.com/desktop/install/windows-install/</a></p>
+<p>On Mac: <a class="reference external" href="https://docs.docker.com/desktop/install/mac-install/">https://docs.docker.com/desktop/install/mac-install/</a></p>
+<p>On Linux: <a class="reference external" href="https://docs.docker.com/desktop/install/linux-install/">https://docs.docker.com/desktop/install/linux-install/</a></p>
+<p>On Ubuntu: <a class="reference external" href="https://docs.docker.com/desktop/install/ubuntu/">https://docs.docker.com/desktop/install/ubuntu/</a></p>
 </section>
 <section id="making-sure-docker-desktop-is-running">
 <h2>Making sure Docker Desktop is running:<a class="headerlink" href="#making-sure-docker-desktop-is-running" title="Permalink to this heading">¶</a></h2>
@@ -74,8 +76,8 @@ On Ubuntu: <a class="reference external" href="https://docs.docker.com/desktop/i
 </div>
 </li>
 </ol>
-<p>Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
-From this point on, we will be using the terminal.</p>
+<p>Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.</p>
+<p>From this point on, we will be using the terminal.</p>
 </section>
 <section id="creating-a-virtual-environment">
 <h2>Creating a virtual environment<a class="headerlink" href="#creating-a-virtual-environment" title="Permalink to this heading">¶</a></h2>
@@ -95,16 +97,20 @@ From this point on, we will be using the terminal.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ source envname/bin/activate
 </pre></div>
 </div>
-<dl class="simple">
-<dt>Finally, run the following command on Windows::</dt><dd><p>$ docker-compose up</p>
-</dd>
-<dt>On Mac or Linux use::</dt><dd><p>$ sudo docker-compose up</p>
-</dd>
-</dl>
+<p>Finally, run the following command on Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker-compose up
+</pre></div>
+</div>
+<p>On Mac or Linux use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker-compose up
+</pre></div>
+</div>
 <p>Waiting for all the neccessary dependencies are installed and images are created. You should have the following:</p>
 <img alt="../_images/images-created.jpg" src="../_images/images-created.jpg" />
 <p>After that, open a web browser and go to <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
-<p>Press Control-C to end the below command.</p>
+<p>You should see the front page of our website.</p>
+<img alt="../_images/front-page.png" src="../_images/front-page.png" />
+<p>Press Control-C if you want to end the testing.</p>
 </section>
 </section>
 

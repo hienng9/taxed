@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex taxedwebsite.idx"] 1679167490 "taxedwebsite.idx" "taxedwebsite.ind" "taxedwebsite" 1679318319
+["makeindex taxedwebsite.idx"] 1679167490 "taxedwebsite.idx" "taxedwebsite.ind" "taxedwebsite" 1679331401
   "taxedwebsite.idx" 0 -1 0 "pdflatex"
   (generated)
   "taxedwebsite.ilg"
   "taxedwebsite.ind"
-["pdflatex"] 1679318314 "taxedwebsite.tex" "taxedwebsite.pdf" "taxedwebsite" 1679318319
+["pdflatex"] 1679331395 "taxedwebsite.tex" "taxedwebsite.pdf" "taxedwebsite" 1679331401
   "/etc/texmf/web2c/texmf.cnf" 1679167297 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -146,6 +146,7 @@
   "dockerrunning.jpg" 1679316918 145520 5cfe762f0dca8c25b4eef05127796af3 ""
   "download-git.png" 1679303802 456156 aa8e5dc93fd6e7d34a88663a1e0aec4a ""
   "dropdown.png" 1679303802 34399 0cbfcf0872c47de3c9ae8016c9fb47d4 ""
+  "front-page.png" 1679331271 48520 1888c7e9e91044c09e784f86a076a63e ""
   "images-created.jpg" 1679316923 284889 567f924a620c20809100b0056191a10c ""
   "login.png" 1679303802 97194 21c05190cfa5ae4075f275d8d58acc0d ""
   "messages-icon.png" 1679303802 10182 39775015404a0567d5b1b6613af082d5 ""
@@ -154,7 +155,7 @@
   "signup1.png" 1679303802 97999 ec40819bbbc1bc9d74012ca15d0ad38c ""
   "signup2.png" 1679303802 116201 6da4134ef17b7313d1cfd581b6a80cd7 ""
   "sphinx.sty" 1679303802 37265 50572eeec4202001a83497a0a8dd9200 ""
-  "sphinxhighlight.sty" 1679318313 7490 72d023191655734567e0798eade2a1f7 ""
+  "sphinxhighlight.sty" 1679331394 7490 72d023191655734567e0798eade2a1f7 ""
   "sphinxlatexadmonitions.sty" 1679303802 11813 d5a61d0da970f5333ff4ad0e352c2bff ""
   "sphinxlatexcontainers.sty" 1679303802 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1679303802 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -169,16 +170,16 @@
   "sphinxlatexstyletext.sty" 1679303802 6310 230e9c67ef82453e767773679e1f6816 ""
   "sphinxlatextables.sty" 1679303802 57830 6dde33374ef653202d83f31844e4f3c5 ""
   "sphinxmanual.cls" 1679303802 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1679318313 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1679331395 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1679303802 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1679303802 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackageboxes.sty" 1679303802 18408 cacf96116848f46194438f1e659006ed ""
   "sphinxpackagefootnote.sty" 1679303802 15254 d93f70cf000a9adb198015bf1b2f136c ""
-  "taxedwebsite.aux" 1679318319 4897 8ac241df2f61e82bbe9a12cbd99664fb "pdflatex"
+  "taxedwebsite.aux" 1679331400 4900 32cb6e521d0a7957912d47f79305afea "pdflatex"
   "taxedwebsite.ind" 0 -1 0 "makeindex taxedwebsite.idx"
-  "taxedwebsite.out" 1679318319 2521 ef9b4a687d7abe41141d05950cf9b805 "pdflatex"
-  "taxedwebsite.tex" 1679318313 12884 d3feb49c2bf77fc22fdabdd2d729af0f ""
-  "taxedwebsite.toc" 1679318319 1139 be51781480f80d513894b97b7e47e06e "pdflatex"
+  "taxedwebsite.out" 1679331400 2521 ef9b4a687d7abe41141d05950cf9b805 "pdflatex"
+  "taxedwebsite.tex" 1679331394 13275 982913ea3d12c7815459e7fa043cd333 ""
+  "taxedwebsite.toc" 1679331400 1140 0474b8319c96360869a5d29edaa2c750 "pdflatex"
   "termsandconds.jpg" 1679316925 140415 5da51d83abc61f68d9a59e6ed1704da1 ""
   "update-user1.png" 1679303803 146874 e22914131b8efe01f09c29e3aeef75c6 ""
   "user-profile.png" 1679303803 88974 69293257c475eab755446c76f6c85b5f ""

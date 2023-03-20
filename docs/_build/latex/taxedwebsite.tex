@@ -106,12 +106,25 @@ Python version 3
 
 \sphinxAtStartPar
 If you have not installed, please visit to \sphinxurl{https://www.python.org/} and comeback once it is installed.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+\sphinxAtStartPar
+Docker for desktop
+
+\end{enumerate}
 
 \sphinxAtStartPar
-2. Docker for desktop
 On Windows: \sphinxurl{https://docs.docker.com/desktop/install/windows-install/}
+
+\sphinxAtStartPar
 On Mac: \sphinxurl{https://docs.docker.com/desktop/install/mac-install/}
+
+\sphinxAtStartPar
 On Linux: \sphinxurl{https://docs.docker.com/desktop/install/linux-install/}
+
+\sphinxAtStartPar
 On Ubuntu: \sphinxurl{https://docs.docker.com/desktop/install/ubuntu/}
 
 
@@ -163,6 +176,8 @@ In case you use git to clone the project, continue by moving into the directory 
 
 \sphinxAtStartPar
 Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
+
+\sphinxAtStartPar
 From this point on, we will be using the terminal.
 
 
@@ -195,16 +210,20 @@ or on Linux or Mac:
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYGZdl{} source envname/bin/activate
 \end{sphinxVerbatim}
-\begin{description}
-\sphinxlineitem{Finally, run the following command on Windows::}
-\sphinxAtStartPar
-\$ docker\sphinxhyphen{}compose up
 
-\sphinxlineitem{On Mac or Linux use::}
 \sphinxAtStartPar
-\$ sudo docker\sphinxhyphen{}compose up
+Finally, run the following command on Windows:
 
-\end{description}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZdl{} docker\PYGZhy{}compose up
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+On Mac or Linux use:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZdl{} sudo docker\PYGZhy{}compose up
+\end{sphinxVerbatim}
 
 \sphinxAtStartPar
 Waiting for all the neccessary dependencies are installed and images are created. You should have the following:
@@ -215,7 +234,12 @@ Waiting for all the neccessary dependencies are installed and images are created
 After that, open a web browser and go to \sphinxurl{http://127.0.0.1:8000/}
 
 \sphinxAtStartPar
-Press Control\sphinxhyphen{}C to end the below command.
+You should see the front page of our website.
+
+\noindent\sphinxincludegraphics{{front-page}.png}
+
+\sphinxAtStartPar
+Press Control\sphinxhyphen{}C if you want to end the testing.
 
 \sphinxstepscope
 
