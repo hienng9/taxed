@@ -8,9 +8,27 @@ If you have any problem, please feel free to contact me via email hien.nguyen@ed
 System requirements
 =======================================
 
-Python version 3
+1. Python version 3
 
 If you have not installed, please visit to https://www.python.org/ and comeback once it is installed.
+
+2. Docker for desktop
+On Windows: https://docs.docker.com/desktop/install/windows-install/
+On Mac: https://docs.docker.com/desktop/install/mac-install/
+On Linux: https://docs.docker.com/desktop/install/linux-install/
+On Ubuntu: https://docs.docker.com/desktop/install/ubuntu/
+
+Making sure Docker Desktop is running:
+=================================================
+After Docker Desktop is installed, open it.
+
+Accept terms and condition when asked.
+
+.. image:: termsandconds.jpg
+
+After starting period, the Docker Desktop will appear as followed:
+
+.. image:: dockerrunning.jpg
 
 Cloning the repository
 =======================================
@@ -27,8 +45,10 @@ Or download the project directly from https://github.com/hienng9/taxed and extra
 
     $ cd taxed
 
-In case you download the project, then open your terminal to change to the directory where the project is located.
+Otherwise, extract the download file, open your terminal to change to the directory where the project is extracted and go to the folder name taxed.
 From this point on, we will be using the terminal.
+
+
 
 Creating a virtual environment
 ==============================================
@@ -41,32 +61,22 @@ Then we create our virtual environment::
 
     $ virtualenv envname
 
-Activate the virtual environment using either::
+Activate the virtual environment using either on Windows::
 
-    $ envname/scripts/activate
+    $ envname/Scripts/activate
 
-or::
+or on Linux or Mac::
 
     $ source envname/bin/activate
 
+Finally, run the following command on Windows::
+    $ docker-compose up
 
-Install the requirements::
+On Mac or Linux use::
+    $ sudo docker-compose up
+Waiting for all the neccessary dependencies are installed and images are created. You should have the following:
 
-    $ pip install -r requirements.txt
+.. image:: images-created.jpg
 
-
-Running the App
-======================================
-
-To run the App, in the same directory, open one terminal::
-
-    $ python -m celery -A taxedwebsite worker -l info
-
-
-open another terminal, run the following::
-
-    $ python manage.py runserver
-
-
-Then, the development server will be started at http://127.0.0.1:8000/
+After that, open a web browser and go to http://127.0.0.1:8000/
 
