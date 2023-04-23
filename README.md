@@ -1,11 +1,9 @@
 <div align="center">
-<img width="30%" src="web1.png">
+<img width="30%" src="https://user-images.githubusercontent.com/72341453/134747028-7e2d90cc-a92f-4f66-815e-54a0d50cca54.PNG">
 
 # Taxed Website
 </div>
 
-###Documentation
-Read the documenation online at http://taxed.rtfd.io/
 ### Cloning the repository
 
 --> Clone the repository using the command below :
@@ -22,7 +20,7 @@ cd taxed
 
 --> Create a virtual environment :
 ```bash
-# Let's install virtualenv first if you have not already
+# Let's install virtualenv first
 pip install virtualenv
 
 # Then we create our virtual environment
@@ -30,14 +28,9 @@ virtualenv envname
 
 ```
 
---> Activate the virtual environment using either:
+--> Activate the virtual environment :
 ```bash
-envname/scripts/activate
-
-```
-or
-```bash
-source envname/bin/activate
+envname\scripts\activate
 
 ```
 
@@ -51,7 +44,7 @@ pip install -r requirements.txt
 
 ### Running the App
 
---> To run the App, in the same directory, open one terminal:
+--> To run the App, in one terminal:
 
 ```bash
 python3 -m celery -A taxedwebsite worker -l info
@@ -76,16 +69,16 @@ python3 manage.py runserver
 &nbsp; 
 <br>
 <p align="center">
-  Salary Calculator
+  Feed Home
 </p>
-<img src="web2.png">
+<img src="https://user-images.githubusercontent.com/72341453/134747262-0a92233d-8010-40f8-84c5-8d94895aac44.PNG">
 </td> 
 <td width="50%">
 <br>
 <p align="center">
-  Chat Bot
+  Room Conversation Preview
 </p>
-<img src="web3.png">  
+<img src="https://user-images.githubusercontent.com/72341453/134747155-3ca5b55f-b064-4741-aeae-abe90bddf41e.PNG">  
 </td>
 </table>
 

@@ -1,5 +1,337 @@
 {% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <!-- Hero -->
+    <section class="section-header bg-secondary text-white" id="second-background">
+        <div class="container">
+           <div class="row justify-content-between align-items-center">
+              <div class="col-6 col-md-7 col-lg-6 text-center text-md-left">
+                    <h1 class="display-2 mb-4">Simple Transparent <br class="d-none d-md-inline">Tax Process</h1>
+                    
+                    <p class="lead mb-4 text-muted">Taxed smooth. Taxed easy. Taxed helps you control incomes and taxes.</p>
+                    <a href="{% url 'base:register' %}" class="btn btn-tertiary me-3 animate-up-2">Register here <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a>
+                </div>
+              <div class="col-6 col-md-5 d-none d-md-block text-center">
+                <img src="{% static 'images/about-illustration.svg' %}" alt="">
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- End of Hero section -->
+    <!-- Section -->
+    <section class="section section-md">
+        <div class="container">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md-6 col-xl-6 mb-5">
+                    <img class="organic-radius img-fluid" src="{% static 'images/beach-vacation.jpg' %}" alt="Office Desk">
+                </div>
+                <div class="col-md-6 col-xl-5 text-center text-md-left">
+                    <h2 class="h1 mb-5">Take the vacation that you deserve</h2>
+                    <p class="lead">At Taxed, we understand your passion and the desire to pursue your dream, fulfill your entrepreneur spirit and experiment your idea. </p>
+                    <p class="lead">
+                        At the same time, we realise that every year freelancers and entrepreneurs like you are paying up to one-month salary for third-party service to take care of their taxes.
+                        </p>
+                    <p class="lead">
+                        
+                        We know that entrepreneurs do not have paid holidays and now they have to give up part of the income for services.
+                        Therefore, we want to give them back the control of their incomes by providing a tool that does not cost them a vacation they long waited.
+                    </p>
+                    <!-- <img src="{% static 'assets/img/signature.svg' %}" alt="signature" class="mt-4" width="150"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section -->
+    <!-- Section -->
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Visit Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-user"></span>
+                        </div>
+                        <h3 class="h5">Users</h3>
+                        <span id="counter-number" class="counter display-3 text-gray d-block">500</span>
+                    </div>
+                    <!-- End of Visit Box -->
+                </div>
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Call Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-money-check"></span>
+                        </div>
+                        <h3 class="h5">Number of holidays saved</h3>
+                        <span id="counter-number"  class="counter display-3 text-gray d-block">2400</span>
+                    </div>
+                    <!-- End of Call Box -->
+                </div>
+                <div class="col-md-4 col-lg-4 text-center">
+                    <!-- Email Box -->
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-primary mb-4">
+                            <span class="fas fa-globe-europe"></span>
+                        </div>
+                        <h3 class="h5">Cities we've reached</h3>
+                        <span id="counter-number"  class="counter display-3 text-gray d-block">100</span>
+                    </div>
+                    <!-- End of Email Box -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section -->
+    
+    <!-- Section -->
+    <section class="section section-lg bg-gray-200">
+        <figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
+            <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+               <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+            </svg>
+         </figure>
+        <div class="container" id="tax-process">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="h1 fw-light"><span class="fw-bold">Tax process</span></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-6">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="timeline timeline-one dark px-3 px-sm-0">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 1. Request a Tax card</h3>
+                                <p>
+                                    Estimate income, travel expenses and other deductions (YEL insurance, etc.) at <a href="https://www.vero.fi/en/e-file/mytax/">MyTax</a>
+                                </p>
+                            </div>
+                            <!-- Timeline Item 2 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 2. Register YEL insurance when applicable</h3>
+                                <p>
+                                    It is mandatory for you to take out YEL insurance if you are between <strong>18-67</strong> years old, self-employed for at least <strong>four consecutive months</strong> and your income is at least <strong>8 575,45</strong> per year. 
+                                    Some of companies sell YEL insurance are <a href="https://elo.fi/en/" >Elo</a>, <a href="https://www.ilmarinen.fi/en/" >Ilmarinen</a>, <a href="https://www.varma.fi/en/" >Varma</a> and <a href="https://veritas.fi/en/" >Veritas</a>.
+                                </p>
+                            </div>
+                            <!-- Timeline Item 3 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 3. Income Register</h3>
+                                <!-- <img class="mt-2" src="{% static 'assets/img/office.png' %}" alt="Themesberg workspace" width="300"> -->
+                                <p>
+                                    Report an income earner's data to the Incomes Register <a href="https://www.suomi.fi/services/incomes-register-finnish-tax-administration/9657359a-a882-4d08-93eb-d713b55a30c2">here</a>.
+                                </p>
+                            </div>
+                            <!-- Timeline Item 4 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 4. Pay tax</h3>
+                                <p>
+                                    For every invoice, you pay your income tax at <a href="https://www.vero.fi/en/e-file/mytax/">MyTax</a>.
+                                </p>
+                                <!-- <img class="mt-2" src="{% static 'assets/img/signature.svg' %}" alt="signature" width="100"> -->
+                            </div>
+                            <!-- Timeline Item 5 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 5. Pay YEL insurance</h3>
+                                <p>
+                                    For every invoice, you pay your percentage of income using the online service of your pension insurance company.
+                                
+                            </div>
+                            <!-- Timeline Item 5 -->
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 6. Pre-completed tax return</h3>
+                                <p>
+                                    In March or April, you will receive a pre-completed tax return. If there is no need for corrections or additions in your 
+                                    return, you do not have to do anything.
+                                    If you want to make corrections, the deadline for them is in May. You can check the deadline date on your tax return 
+                                    and in MyTax.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="h4 mb-4">Step 7. Tax return</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+            <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+               <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+            </svg>
+         </figure>
+    </section>
 
-{% block content %} 
-<h1> Front Page</h1>
-{% endblock %}
+    <!-- INCOME ESTIMATE -->
+    <section class="section section-md">
+        <div class="container" id="salary-estimator">
+            <div class="row align-items-center justify-content-around">
+                <h2 class="h1 mb-5">Salary Estimator</h2>
+                <div class="col-md-6 col-xl-5 text-center text-md-left" id="form-salary">
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputIconRight">Invoicing Amount</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="amount" placeholder="Enter the amount of invoice" value="1000"
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><span>€</span></span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputIconRight">Tax Percentage</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="tax-percent" placeholder="Enter your income tax percentage"
+                                aria-label="Search" aria-describedby="basic-addon2" value="10">
+                            <span class="input-group-text" id="basic-addon2"><span>%</span></span>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="YEL-insurance" onclick="showYELbox()">
+                        <label class="form-check-label" for="YEL-insurance">
+                            Do you have to pay YEL?
+                        </label>
+                    </div>
+                    <div id = "YEL">
+                        <div class="mb-3">
+                            <label for="age">Your age</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="age" placeholder="Enter your age" value="30"
+                                    aria-label="Search" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2"><span>years old</span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="h6" for="YEL-starting-date">When did you take out YEL-insurance?</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text" id="basic-addonDate1"><span
+                                        class="fas far fa-calendar-alt"></span></span>
+                                <input class="form-control datepicker-input" data-datepicker="" id="YEL-input-date" placeholder="Select date"
+                                    type="text" aria-label="Date with icon left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="vat-rates">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">VAT tax (24%) is included in the invoicing amount</label>
+                    </div>
+                    <button class="btn btn-primary" onclick="displaySalary()">ESTIMATE</button>
+                    <div>
+                    <div class="alert alert-info" role="alert" id="alert-pay">
+                        Please register your income at <a href="https://www.suomi.fi/services/incomes-register-finnish-tax-administration/9657359a-a882-4d08-93eb-d713b55a30c2"><strong>Income Register</strong></a> and pay your YEL insurance to your insurance company.
+                    </div></div>
+                </div>
+        
+                <div class="col-md-6 col-xl-6 mb-5">
+                    <div id="salary">
+                        <div class="mb-5">
+                            <div class="mb-4">
+                                <span class="h5"><strong>ESTIMATED INCOME</strong></span>
+                            </div>
+                            <div class="table-responsive-sm">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th scope="col" id="class2">Category</th>
+                                        <th scope="col" id="teacher2">Details</th>
+                                        <th scope="col" id="males2" align="right">Amount</th>
+                                    </tr>
+                                    <tr id="invoice">
+                                        <th scope="row" id="invoice1" rowspan="2">Invoice</th>
+                                        <th scope="row" id="invoice-VAT" headers="firstyear2 teacher2">VAT tax</th>
+                                        <td id="invoice2" align="right"></td>
+                                    </tr>
+                                    <tr id="after-VAT">
+                                        <th scope="row" id="after-VAT1" headers="firstyear2 teacher2">After VAT tax</th>
+                                        <td id="after-VAT2" align="right"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" id="secondyear2" rowspan="2">Income</th>
+                                        <th scope="row" id="incomeTax1" headers="secondyear2 teacher2">Income tax</th>
+                                        <td id="incomeTax2" align="right"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" id="afterIncomeTax1" headers="secondyear2 teacher2">After income tax</th>
+                                        <td id="afterIncomeTax2" align="right"></td>
+                                    </tr>
+                                    
+                                    <tr id="YEL-ins">
+                                        <th scope="row" id="secondyear2" rowspan="1">YEL insurance</th>
+                                        <th scope="row" id="YEL-ins1" headers="secondyear2 teacher2">Fee</th>
+                                        <td id="YEL-ins2" align="right"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row" id="secondyear2" rowspan="1">Received Amount</th>
+                                        <th scope="row" id="Lam2" headers="secondyear2 teacher2"></th>
+                                        <td id="receive" align="right">3</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section section-lg">
+        <div class="container" id="contact-us">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Contact Card -->
+                    <div class="card border-0 p-2 p-md-3 p-lg-5">
+                        <div class="card-header bg-white border-0 text-center">
+                            <h2>Want to contact us?</h2>
+                            <p>Cool! Let’s talk about your future plan</p>
+                        </div>
+                        <div class="card-body pt-0">
+                            <form action="#">
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label for="name">Your Name</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>
+                                        <input type="text" class="form-control" placeholder="e.g. Brad Pitt" id="name" required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label for="email">Your Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>
+                                        <input type="email" class="form-control" placeholder="example@company.com" id="email" required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <div class="mb-4">
+                                    <label for="message">Your Message</label>
+                                    <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <!-- End of Form -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-secondary">Send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End of Contact Card -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section -->
+</main>
+
+{% endblock content %}
+
+{% block footer %}
+
+    {% include 'footer.html' %}
+
+{% endblock footer %}

@@ -1,42 +1,36 @@
 from django.forms import ModelForm, widgets
 from django.contrib.auth.forms import UserCreationForm
-from .models import Room, User, Invoice
+from .models import User
+from django import forms
+
+from django.utils.translation import gettext_lazy as _
 
 
 class MyUserCreationForm(UserCreationForm):
-    class Meta:
-        model = User
-        fields = ['name', 'username', 'email', 'password1', 'password2']
+  password1 = forms.CharField(
+      label=_("Your Password"),
+      widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}),
+  )
+  password2 = forms.CharField(
+      label=_("Confirm Password"),
+      widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Confirm Password'}),
+  )
 
+  class Meta:
+    model = User
+    fields = ('username', 'email', )
 
-class RoomForm(ModelForm):
-    class Meta:
-        model = Room
-        fields = '__all__'
-        exclude = ['host', 'participants']
-
-class InvoiceForm(ModelForm):
-    class Meta:
-        model = Invoice
-        fields = '__all__'
-        exclude = ['user', 'is_sent']
-        widgets = {
-            "include_VAT": widgets.Select(attrs={
-                'class': 'form-control',
-            })}
-
-class CalculatorForm(ModelForm):
-    class Meta:
-        model = Invoice
-        fields = '__all__'
-        exclude = ['user', 'name', 'buyer_business_id',
-        'is_sent']
-        widgets = {
-            "include_VAT": widgets.Select(attrs={
-                'class': 'form-control',
-            })}
-
-class UserForm(ModelForm):
-    class Meta:
-        model = User
-        fields = ['avatar', 'name', 'username', 'email', 'bio']
+    labels = {
+      'username': _('Your Username'),
+      'email': _('Your Email'),
+    }
+    widgets = {
+      'username': forms.TextInput(attrs={
+          'class': 'form-control',
+          'placeholder': 'Username'
+      }),
+      'email': forms.EmailInput(attrs={
+          'class': 'form-control',
+          'placeholder': 'example@company.com'
+      })
+    }
