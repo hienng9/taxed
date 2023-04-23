@@ -1,5 +1,4 @@
 <div align="center">
-<img width="30%" src="https://user-images.githubusercontent.com/72341453/134747028-7e2d90cc-a92f-4f66-815e-54a0d50cca54.PNG">
 
 # Taxed Website
 </div>
@@ -59,11 +58,6 @@ python3 manage.py runserver
 
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
-#
-
-### App Preview :
-
-<table width="100%"> 
 <tr>
 <td width="50%">      
 &nbsp; 
